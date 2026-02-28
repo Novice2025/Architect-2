@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Inglês para Mestrado - Conforto Ambiental e Aprendizagem</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #3498db;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.1em;
+            color: #2980b9;
+            border-bottom: none;
+            margin-top: 15px;
+        }
+        .intro-text {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            flex-wrap: wrap;
+        }
+        .tab-button {
+            background-color: #eee;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .tab-button.active {
+            background-color: #3498db;
+            color: white;
+            border-bottom: 2px solid #3498db;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+            padding: 10px 0 20px 0;
+            border-top: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .phrase-block {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        }
+        .phrase-block strong {
+            color: #e74c3c;
+            font-size: 1em;
+        }
+        .phrase-block .portuguese {
+            color: #27ae60;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .explanation {
+            background-color: #f9f9f9;
+            border-left: 3px solid #f39c12;
+            padding: 8px 12px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .practice-section {
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px dashed #eee;
+        }
+        .practice-section input[type="text"] {
+            padding: 8px;
+            width: calc(100% - 120px);
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+        .practice-section button {
+            padding: 8px 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .practice-section button:hover {
+            background-color: #2980b9;
+        }
+        .feedback {
+            margin-top: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .feedback.correct {
+            color: #27ae60;
+        }
+        .feedback.incorrect {
+            color: #e74c3c;
+        }
+        .audio-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: #3498db;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .audio-button:hover {
+            color: #2980b9;
+        }
+        .conclusion {
+            background-color: #e8f8f7;
+            border-left: 5px solid #2ecc71;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Inglês Acadêmico – Conforto Ambiental e Aprendizagem</h1>
+
+<div class="intro-text">
+    <p>Este material ajuda a Daby a ler e entender artigos sobre conforto térmico, qualidade ambiental interna e aprendizagem em escolas. Cada aba traz frases reais ou muito próximas de textos científicos, com explicação em português e um exercício simples de completar a lacuna.</p>
+    <p>Objetivo: reconhecer essas estruturas quando ela estiver lendo o artigo completo, e depois conseguir usá-las ao escrever o próprio trabalho.</p>
+</div>
+
+<div class="tabs">
+    <button class="tab-button active" onclick="openTab(event, 'tab1')">Aba 1: Caso Especial de Pesquisa</button>
+    <button class="tab-button" onclick="openTab(event, 'tab2')">Aba 2: Amostras e Idades</button>
+    <button class="tab-button" onclick="openTab(event, 'tab3')">Aba 3: Crianças vs. Adultos</button>
+    <button class="tab-button" onclick="openTab(event, 'tab4')">Aba 4: Atenção, Memória e Aprendizagem</button>
+    <button class="tab-button" onclick="openTab(event, 'tab5')">Aba 5: Sujeito de Interesse</button>
+    <button class="tab-button" onclick="openTab(event, 'tab6')">Aba 6: Estudos Futuros e Estatística</button>
+    <button class="tab-button" onclick="openTab(event, 'tab7')">Aba 7: Foco em Predição e Modelagem</button>
+</div>
+
+<!-- TAB 1 -->
+<div id="tab1" class="tab-content active">
+    <h2>Aba 1: Caso especial em instituição educacional</h2>
+    <p>Nesta aba, Daby vê como artigos descrevem um caso particular de pesquisa em uma escola com crianças e jovens com dificuldades de aprendizagem.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> A particular case of research was conducted in an educational institution for children and young people diagnosed with learning difficulties and attention deficits.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=A%20particular%20case%20of%20research%20was%20conducted%20in%20an%20educational%20institution%20for%20children%20and%20young%20people%20diagnosed%20with%20learning%20difficulties%20and%20attention%20deficits.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Um caso particular de pesquisa foi conduzido em uma instituição educacional para crianças e jovens diagnosticados com dificuldades de aprendizagem e déficits de atenção.</p>
+        <div class="explanation">
+            <p>Expressão útil para descrever um <em>caso específico</em> dentro de um conjunto maior de estudos. Repare em “a particular case of research was conducted in…”.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>A particular case of ____ was conducted...</em></p>
+            <input type="text" id="t1_q1" onkeyup="checkAnswerOnEnter(event, 't1_q1', 'research', 't1_q1_fb')">
+            <button onclick="checkAnswer('t1_q1', 'research', 't1_q1_fb')">Verificar</button>
+            <div id="t1_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> Correlations and substantial differences were found between objective variables and thermal sensation, as well as the actual percentage of dissatisfied indices.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Correlations%20and%20substantial%20differences%20were%20found%20between%20objective%20variables%20and%20thermal%20sensation,%20as%20well%20as%20the%20actual%20percentage%20of%20dissatisfied%20indices.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Foram encontradas correlações e diferenças substanciais entre variáveis objetivas e sensação térmica, bem como o percentual real de índices de insatisfeitos.</p>
+        <div class="explanation">
+            <p>Estrutura típica de resultados: “<strong>were found between</strong> X and Y”. “Correlations and substantial differences” é um pacote de vocabulário estatístico.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>Correlations and substantial ____ were found...</em></p>
+            <input type="text" id="t1_q2" onkeyup="checkAnswerOnEnter(event, 't1_q2', 'differences', 't1_q2_fb')">
+            <button onclick="checkAnswer('t1_q2', 'differences', 't1_q2_fb')">Verificar</button>
+            <div id="t1_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> Students did not feel thermally comfortable in the classroom, focusing on the most significant concern of the occupants on acoustic discomfort.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Students%20did%20not%20feel%20thermally%20comfortable%20in%20the%20classroom,%20focusing%20on%20the%20most%20significant%20concern%20of%20the%20occupants%20on%20acoustic%20discomfort.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Os estudantes não se sentiam termicamente confortáveis na sala de aula, concentrando-se na preocupação mais significativa dos ocupantes: o desconforto acústico.</p>
+        <div class="explanation">
+            <p>Mostra como juntar conforto térmico e conforto acústico na mesma frase. “<strong>did not feel thermally comfortable</strong>” é importante para sua área.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>did not feel thermally ____ in the classroom</em></p>
+            <input type="text" id="t1_q3" onkeyup="checkAnswerOnEnter(event, 't1_q3', 'comfortable', 't1_q3_fb')">
+            <button onclick="checkAnswer('t1_q3', 'comfortable', 't1_q3_fb')">Verificar</button>
+            <div id="t1_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 4</h3>
+        <p><strong>Inglês:</strong> The results confirmed the close relationship between air quality and the performance of school building occupants.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=The%20results%20confirmed%20the%20close%20relationship%20between%20air%20quality%20and%20the%20performance%20of%20school%20building%20occupants.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Os resultados confirmaram a estreita relação entre a qualidade do ar e o desempenho dos ocupantes do edifício escolar.</p>
+        <div class="explanation">
+            <p>Frase perfeita para “fechar” resultados: “<strong>the results confirmed the close relationship between</strong> X and Y”.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>The results confirmed the close ____ between air quality and performance.</em></p>
+            <input type="text" id="t1_q4" onkeyup="checkAnswerOnEnter(event, 't1_q4', 'relationship', 't1_q4_fb')">
+            <button onclick="checkAnswer('t1_q4', 'relationship', 't1_q4_fb')">Verificar</button>
+            <div id="t1_q4_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>Nesta aba, Daby vê como descrever um caso específico, com população especial, variáveis objetivas, sensação térmica, desconforto acústico e qualidade do ar.</p>
+    </div>
+</div>
+
+<!-- TAB 2 -->
+<div id="tab2" class="tab-content">
+    <h2>Aba 2: Amostras, níveis escolares e pictogramas</h2>
+    <p>Aqui, o foco é como os artigos explicam quem são os participantes (high school, middle school, elementary) e como isso influencia métodos de coleta.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> Most of the studies sampled high school and middle school students because they identified some maturity to complete surveys and tests.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Most%20of%20the%20studies%20sampled%20high%20school%20and%20middle%20school%20students%20because%20they%20identified%20some%20maturity%20to%20complete%20surveys%20and%20tests.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> A maioria dos estudos utilizou amostras de estudantes do ensino médio e fundamental II porque identificaram certa maturidade para responder questionários e testes.</p>
+        <div class="explanation">
+            <p>“<strong>sampled high school and middle school students</strong>” é a forma padrão de dizer que a amostra veio desses níveis escolares.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>Most of the studies ____ high school students.</em></p>
+            <input type="text" id="t2_q1" onkeyup="checkAnswerOnEnter(event, 't2_q1', 'sampled', 't2_q1_fb')">
+            <button onclick="checkAnswer('t2_q1', 'sampled', 't2_q1_fb')">Verificar</button>
+            <div id="t2_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> A high percentage of studies took samples of elementary school students, under 11 years old.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=A%20high%20percentage%20of%20studies%20took%20samples%20of%20elementary%20school%20students,%20under%2011%20years%20old.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Uma alta porcentagem de estudos coletou amostras de estudantes do ensino fundamental, com menos de 11 anos de idade.</p>
+        <div class="explanation">
+            <p>“<strong>a high percentage of studies</strong>” é frase muito comum em revisões bibliográficas.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>A high ____ of studies took samples...</em></p>
+            <input type="text" id="t2_q2" onkeyup="checkAnswerOnEnter(event, 't2_q2', 'percentage', 't2_q2_fb')">
+            <button onclick="checkAnswer('t2_q2', 'percentage', 't2_q2_fb')">Verificar</button>
+            <div id="t2_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> For younger students, it was necessary to use pictorial representations in surveys and tests, which is helpful for that age group.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=For%20younger%20students,%20it%20was%20necessary%20to%20use%20pictorial%20representations%20in%20surveys%20and%20tests,%20which%20is%20helpful%20for%20that%20age%20group.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Para os estudantes mais jovens, foi necessário usar representações pictóricas em questionários e testes, o que é útil para aquela faixa etária.</p>
+        <div class="explanation">
+            <p>Importante para Daby: “<strong>pictorial representations</strong>” (carinhas, figuras, ícones) em vez de apenas texto.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>use ____ representations in surveys and tests</em></p>
+            <input type="text" id="t2_q3" onkeyup="checkAnswerOnEnter(event, 't2_q3', 'pictorial', 't2_q3_fb')">
+            <button onclick="checkAnswer('t2_q3', 'pictorial', 't2_q3_fb')">Verificar</button>
+            <div id="t2_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>Aqui, ela aprende a falar de amostragem por nível escolar e da adaptação de instrumentos para crianças pequenas.</p>
+    </div>
+</div>
+
+<!-- TAB 3 -->
+<div id="tab3" class="tab-content">
+    <h2>Aba 3: Crianças, ASHRAE e sensação térmica</h2>
+    <p>Nesta aba, o foco é a comparação entre previsões de adultos (normas ASHRAE) e respostas de crianças.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> When comparing ASHRAE predictions of thermal sensation for adults with those indicated by students, the research involving children shows important differences.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=When%20comparing%20ASHRAE%20predictions%20of%20thermal%20sensation%20for%20adults%20with%20those%20indicated%20by%20students,%20the%20research%20involving%20children%20shows%20important%20differences.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Ao comparar as previsões de sensação térmica da ASHRAE para adultos com as indicadas pelos estudantes, a pesquisa envolvendo crianças mostra diferenças importantes.</p>
+        <div class="explanation">
+            <p>Estrutura: “<strong>When comparing X with Y, the research shows...</strong>”. Muito comum em discussões de resultados.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>ASHRAE predictions of thermal ____ for adults</em></p>
+            <input type="text" id="t3_q1" onkeyup="checkAnswerOnEnter(event, 't3_q1', 'sensation', 't3_q1_fb')">
+            <button onclick="checkAnswer('t3_q1', 'sensation', 't3_q1_fb')">Verificar</button>
+            <div id="t3_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> Children appear to have a warmer sensation than that expected for an adult and require cooler operating temperatures to achieve thermal comfort.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Children%20appear%20to%20have%20a%20warmer%20sensation%20than%20that%20expected%20for%20an%20adult%20and%20require%20cooler%20operating%20temperatures%20to%20achieve%20thermal%20comfort.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> As crianças parecem ter uma sensação mais quente do que a esperada para um adulto e exigem temperaturas operacionais mais frias para alcançar o conforto térmico.</p>
+        <div class="explanation">
+            <p>Vocabulário-chave: <strong>warmer sensation</strong>, <strong>cooler operating temperatures</strong>, <strong>achieve thermal comfort</strong>.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>require cooler operating ____ to achieve thermal comfort</em></p>
+            <input type="text" id="t3_q2" onkeyup="checkAnswerOnEnter(event, 't3_q2', 'temperatures', 't3_q2_fb')">
+            <button onclick="checkAnswer('t3_q2', 'temperatures', 't3_q2_fb')">Verificar</button>
+            <div id="t3_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> This makes it pertinent to look more closely at the specific characteristics of the youngest schoolchildren.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=This%20makes%20it%20pertinent%20to%20look%20more%20closely%20at%20the%20specific%20characteristics%20of%20the%20youngest%20schoolchildren.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Isso torna pertinente olhar mais de perto para as características específicas das crianças mais novas em idade escolar.</p>
+        <div class="explanation">
+            <p>Expressão muito útil em discussão: “<strong>This makes it pertinent to look more closely at...</strong>”.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>This makes it ____ to look more closely...</em></p>
+            <input type="text" id="t3_q3" onkeyup="checkAnswerOnEnter(event, 't3_q3', 'pertinent', 't3_q3_fb')">
+            <button onclick="checkAnswer('t3_q3', 'pertinent', 't3_q3_fb')">Verificar</button>
+            <div id="t3_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>A Daby vê aqui como o artigo justifica a importância de estudar crianças separadamente, por diferenças fisiológicas e de sensação térmica.</p>
+    </div>
+</div>
+
+<!-- TAB 4 -->
+<div id="tab4" class="tab-content">
+    <h2>Aba 4: Atenção, memória e perspectivas de aprendizagem</h2>
+    <p>Agora, o texto passa a falar de atenção, memória e da necessidade de envolver especialistas em educação e neuropsicologia.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> The importance of integrating learning perspectives has been recognized, and some researchers have focused on measuring conditions that favour student learning, such as attention and memory.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=The%20importance%20of%20integrating%20learning%20perspectives%20has%20been%20recognized,%20and%20some%20researchers%20have%20focused%20on%20measuring%20conditions%20that%20favour%20student%20learning,%20such%20as%20attention%20and%20memory.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> A importância de integrar perspectivas de aprendizagem tem sido reconhecida, e alguns pesquisadores têm se concentrado em medir condições que favorecem a aprendizagem dos estudantes, como atenção e memória.</p>
+        <div class="explanation">
+            <p>Boa frase para ligar conforto ambiental com processos cognitivos: atenção e memória.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>conditions that favour student learning, such as attention and ____</em></p>
+            <input type="text" id="t4_q1" onkeyup="checkAnswerOnEnter(event, 't4_q1', 'memory', 't4_q1_fb')">
+            <button onclick="checkAnswer('t4_q1', 'memory', 't4_q1_fb')">Verificar</button>
+            <div id="t4_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> It is important to more actively involve professionals and researchers in education or neuropsychology in this type of study.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=It%20is%20important%20to%20more%20actively%20involve%20professionals%20and%20researchers%20in%20education%20or%20neuropsychology%20in%20this%20type%20of%20study.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> É importante envolver de forma mais ativa profissionais e pesquisadores em educação ou neuropsicologia nesse tipo de estudo.</p>
+        <div class="explanation">
+            <p>Expressão padrão de recomendação: “<strong>It is important to involve...</strong>”.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>It is important to more actively ____ professionals...</em></p>
+            <input type="text" id="t4_q2" onkeyup="checkAnswerOnEnter(event, 't4_q2', 'involve', 't4_q2_fb')">
+            <button onclick="checkAnswer('t4_q2', 'involve', 't4_q2_fb')">Verificar</button>
+            <div id="t4_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> These professionals can help investigate learning measurements from other perspectives.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=These%20professionals%20can%20help%20investigate%20learning%20measurements%20from%20other%20perspectives.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Esses profissionais podem ajudar a investigar medidas de aprendizagem a partir de outras perspectivas.</p>
+        <div class="explanation">
+            <p>Mostra bem a ideia de “<strong>from other perspectives</strong>” – ótimo para conclusões e sugestões.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>learning measurements from other ____</em></p>
+            <input type="text" id="t4_q3" onkeyup="checkAnswerOnEnter(event, 't4_q3', 'perspectives', 't4_q3_fb')">
+            <button onclick="checkAnswer('t4_q3', 'perspectives', 't4_q3_fb')">Verificar</button>
+            <div id="t4_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>Aqui, Daby vê como o artigo conecta conforto ambiental com ciências da educação e neurociência, e como isso aparece na escrita acadêmica.</p>
+    </div>
+</div>
+
+<!-- TAB 5 -->
+<div id="tab5" class="tab-content">
+    <h2>Aba 5: Sujeito de interesse e fases da escolarização</h2>
+    <p>Esta parte do texto fala explicitamente de quem é o sujeito principal nos estudos e por que diferentes fases da escolarização são importantes.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> The subject of interest is generally the student, as he or she develops the learning process.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=The%20subject%20of%20interest%20is%20generally%20the%20student,%20as%20he%20or%20she%20develops%20the%20learning%20process.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> O sujeito de interesse é geralmente o estudante, pois é ele (ou ela) que desenvolve o processo de aprendizagem.</p>
+        <div class="explanation">
+            <p>“<strong>The subject of interest is generally the student</strong>” deixa muito claro quem é o foco da pesquisa.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>The subject of ____ is generally the student</em></p>
+            <input type="text" id="t5_q1" onkeyup="checkAnswerOnEnter(event, 't5_q1', 'interest', 't5_q1_fb')">
+            <button onclick="checkAnswer('t5_q1', 'interest', 't5_q1_fb')">Verificar</button>
+            <div id="t5_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> Most research has focused on high school and middle school students, because these ages favour the application of tests more easily.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Most%20research%20has%20focused%20on%20high%20school%20and%20middle%20school%20students,%20because%20these%20ages%20favour%20the%20application%20of%20tests%20more%20easily.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> A maior parte das pesquisas tem se concentrado em estudantes do ensino médio e fundamental II, porque essas idades favorecem a aplicação de testes com mais facilidade.</p>
+        <div class="explanation">
+            <p>Expressão importante: “<strong>Most research has focused on...</strong>”.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>Most research has ____ on high school students</em></p>
+            <input type="text" id="t5_q2" onkeyup="checkAnswerOnEnter(event, 't5_q2', 'focused', 't5_q2_fb')">
+            <button onclick="checkAnswer('t5_q2', 'focused', 't5_q2_fb')">Verificar</button>
+            <div id="t5_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> The development of learning through the stimulation of attention and concentration in the early years is very important for the child’s brain development.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=The%20development%20of%20learning%20through%20the%20stimulation%20of%20attention%20and%20concentration%20in%20the%20early%20years%20is%20very%20important%20for%20the%20child’s%20brain%20development.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> O desenvolvimento da aprendizagem por meio da estimulação da atenção e da concentração nos primeiros anos é muito importante para o desenvolvimento cerebral da criança.</p>
+        <div class="explanation">
+            <p>Frase longa, mas cheia de vocabulário fundamental: <strong>stimulation of attention and concentration</strong>, <strong>early years</strong>, <strong>brain development</strong>.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>stimulation of attention and ____ in the early years</em></p>
+            <input type="text" id="t5_q3" onkeyup="checkAnswerOnEnter(event, 't5_q3', 'concentration', 't5_q3_fb')">
+            <button onclick="checkAnswer('t5_q3', 'concentration', 't5_q3_fb')">Verificar</button>
+            <div id="t5_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 4</h3>
+        <p><strong>Inglês:</strong> In addition, other people involved in the learning process can also be studied.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=In%20addition,%20other%20people%20involved%20in%20the%20learning%20process%20can%20also%20be%20studied.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Além disso, outras pessoas envolvidas no processo de aprendizagem também podem ser estudadas.</p>
+        <div class="explanation">
+            <p>“<strong>In addition</strong>” é ótimo conector para ampliação de escopo.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>In ____ , other people involved can be studied</em></p>
+            <input type="text" id="t5_q4" onkeyup="checkAnswerOnEnter(event, 't5_q4', 'addition', 't5_q4_fb')">
+            <button onclick="checkAnswer('t5_q4', 'addition', 't5_q4_fb')">Verificar</button>
+            <div id="t5_q4_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>A aba 5 ajuda a Daby a falar claramente sobre quem é o foco dos estudos (estudantes) e por que as diferentes fases (early years vs. high school) importam.</p>
+    </div>
+</div>
+
+<!-- TAB 6 -->
+<div id="tab6" class="tab-content">
+    <h2>Aba 6: Estudos futuros e níveis de análise estatística</h2>
+    <p>Agora entram as recomendações metodológicas: experimentos confirmatórios, tipos de análise estatística e foco em previsão.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> For future studies, confirmatory experiments can be carried out with a complete statistical analysis.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=For%20future%20studies,%20confirmatory%20experiments%20can%20be%20carried%20out%20with%20a%20complete%20statistical%20analysis.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Para estudos futuros, experimentos confirmatórios podem ser realizados com uma análise estatística completa.</p>
+        <div class="explanation">
+            <p>Boa forma de começar seção de “Future work”: “<strong>For future studies, ... can be carried out</strong>”.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>For future ____ , confirmatory experiments can be carried out</em></p>
+            <input type="text" id="t6_q1" onkeyup="checkAnswerOnEnter(event, 't6_q1', 'studies', 't6_q1_fb')">
+            <button onclick="checkAnswer('t6_q1', 'studies', 't6_q1_fb')">Verificar</button>
+            <div id="t6_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> This analysis may include descriptive, exploratory, inferential, and predictive levels.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=This%20analysis%20may%20include%20descriptive,%20exploratory,%20inferential,%20and%20predictive%20levels.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Essa análise pode incluir níveis descritivos, exploratórios, inferenciais e preditivos.</p>
+        <div class="explanation">
+            <p>Lista de vocabulário estatístico que a Daby provavelmente verá muito.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>descriptive, exploratory, inferential, and ____ levels</em></p>
+            <input type="text" id="t6_q2" onkeyup="checkAnswerOnEnter(event, 't6_q2', 'predictive', 't6_q2_fb')">
+            <button onclick="checkAnswer('t6_q2', 'predictive', 't6_q2_fb')">Verificar</button>
+            <div id="t6_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> Special emphasis on predictive analysis will allow an optimisation process to be performed, relating learning variables with environmental variables.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Special%20emphasis%20on%20predictive%20analysis%20will%20allow%20an%20optimisation%20process%20to%20be%20performed,%20relating%20learning%20variables%20with%20environmental%20variables.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Uma ênfase especial na análise preditiva permitirá que seja realizado um processo de otimização, relacionando variáveis de aprendizagem com variáveis ambientais.</p>
+        <div class="explanation">
+            <p>Palavras-chave: <strong>predictive analysis</strong>, <strong>optimisation process</strong>, <strong>relating learning variables with environmental variables</strong>.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>Special emphasis on ____ analysis will allow an optimisation process</em></p>
+            <input type="text" id="t6_q3" onkeyup="checkAnswerOnEnter(event, 't6_q3', 'predictive', 't6_q3_fb')">
+            <button onclick="checkAnswer('t6_q3', 'predictive', 't6_q3_fb')">Verificar</button>
+            <div id="t6_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>A Daby passa a enxergar como artigos propõem aprofundar a parte estatística, não só descrever, mas prever e otimizar.</p>
+    </div>
+</div>
+
+<!-- TAB 7 -->
+<div id="tab7" class="tab-content">
+    <h2>Aba 7: Condições favoráveis e avanço para modelagem</h2>
+    <p>Por fim, o texto fala em identificar condições favoráveis para salas de aula e avançar para modelagem preditiva.</p>
+
+    <div class="phrase-block">
+        <h3>Frase 1</h3>
+        <p><strong>Inglês:</strong> Predictive analysis can help identify the most favourable conditions for classrooms where the teaching–learning process largely takes place.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Predictive%20analysis%20can%20help%20identify%20the%20most%20favourable%20conditions%20for%20classrooms%20where%20the%20teaching–learning%20process%20largely%20takes%20place.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> A análise preditiva pode ajudar a identificar as condições mais favoráveis para salas de aula, onde o processo de ensino-aprendizagem ocorre em grande parte.</p>
+        <div class="explanation">
+            <p>Excelente frase para conectar estatística com aplicação prática em conforto de sala de aula.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>identify the most ____ conditions for classrooms</em></p>
+            <input type="text" id="t7_q1" onkeyup="checkAnswerOnEnter(event, 't7_q1', 'favourable', 't7_q1_fb')">
+            <button onclick="checkAnswer('t7_q1', 'favourable', 't7_q1_fb')">Verificar</button>
+            <div id="t7_q1_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 2</h3>
+        <p><strong>Inglês:</strong> Based on what has already been explored in the descriptive and exploratory aspects, progress should be made towards predictive research that allows modelling.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Based%20on%20what%20has%20already%20been%20explored%20in%20the%20descriptive%20and%20exploratory%20aspects,%20progress%20should%20be%20made%20towards%20predictive%20research%20that%20allows%20modelling.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Com base no que já foi explorado nos aspectos descritivos e exploratórios, deve-se avançar em direção a pesquisas preditivas que permitam a modelagem.</p>
+        <div class="explanation">
+            <p>Conector forte de conclusão: “<strong>Based on what has already been explored...</strong> progress should be made towards...”</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>progress should be made towards predictive ____ that allows modelling</em></p>
+            <input type="text" id="t7_q2" onkeyup="checkAnswerOnEnter(event, 't7_q2', 'research', 't7_q2_fb')">
+            <button onclick="checkAnswer('t7_q2', 'research', 't7_q2_fb')">Verificar</button>
+            <div id="t7_q2_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="phrase-block">
+        <h3>Frase 3</h3>
+        <p><strong>Inglês:</strong> Such modelling can relate learning outcomes to environmental variables, supporting decisions about school building design and operation.
+            <button class="audio-button" onclick="playAudio('https://translate.google.com/translate_tts?ie=UTF-8&q=Such%20modelling%20can%20relate%20learning%20outcomes%20to%20environmental%20variables,%20supporting%20decisions%20about%20school%20building%20design%20and%20operation.&tl=en&client=tw-ob')">🔊</button>
+        </p>
+        <p class="portuguese"><strong>Português:</strong> Tal modelagem pode relacionar resultados de aprendizagem com variáveis ambientais, apoiando decisões sobre o projeto e a operação de edifícios escolares.</p>
+        <div class="explanation">
+            <p>Fecha muito bem com a ideia de aplicação prática da pesquisa em conforto ambiental.</p>
+        </div>
+        <div class="practice-section">
+            <p>Complete: <em>Such modelling can relate learning ____ to environmental variables</em></p>
+            <input type="text" id="t7_q3" onkeyup="checkAnswerOnEnter(event, 't7_q3', 'outcomes', 't7_q3_fb')">
+            <button onclick="checkAnswer('t7_q3', 'outcomes', 't7_q3_fb')">Verificar</button>
+            <div id="t7_q3_fb" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <p>Com a Aba 7, a Daby entende o “para quê” dos modelos: definir condições ideais de sala de aula e orientar decisões de projeto e operação.</p>
+    </div>
+</div>
+
+<script>
+    function playAudio(url) {
+        new Audio(url).play();
+    }
+
+    function checkAnswer(inputId, correctAnswer, feedbackId) {
+        const inputElement = document.getElementById(inputId);
+        const feedbackElement = document.getElementById(feedbackId);
+        const userAnswer = inputElement.value.trim();
+
+        if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+            feedbackElement.textContent = "Correto! Muito bem!";
+            feedbackElement.className = "feedback correct";
+        } else {
+            feedbackElement.textContent = `Ops, a resposta correta é "${correctAnswer}". Tente novamente!`;
+            feedbackElement.className = "feedback incorrect";
+        }
+    }
+
+    function checkAnswerOnEnter(event, inputId, correctAnswer, feedbackId) {
+        if (event.key === 'Enter') {
+            checkAnswer(inputId, correctAnswer, feedbackId);
+        }
+    }
+
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelector('.tab-button').click();
+    });
+</script>
+
+</body>
+</html>
